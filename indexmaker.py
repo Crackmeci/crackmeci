@@ -61,32 +61,6 @@ alert("{7}");
 </script>
 <center><img src="{2}" alt="" width="{10}" height="{11}"></img></center>
 <center><{8}><font color="{3}" family="{4}" size="{5}">{6}</font></{8}></center>
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
-<script type="text/javascript">
-
-//form tags to omit in NS6+:
-var omitformtags=["input", "textarea", "select"]
-
-omitformtags=omitformtags.join("|")
-
-function disableselect(e){
-if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
-return false
-}
-
-function reEnable(){
-return true
-}
-
-if (typeof document.onselectstart!="undefined")
-document.onselectstart=new Function ("return false")
-else{
-document.onmousedown=disableselect
-document.onmouseup=reEnable
-}
-
-</script>
-<body onkeydown="return false">
 </body>
 <!--Bu index THT İndex Makerla Oluşturulmuştur-->
 <!--
